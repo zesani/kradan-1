@@ -1,27 +1,28 @@
 <template lang="html">
-    <div class="atom">
+  <div class="atom">
       <!-- Menu -->
-      <ul class="menu">
-        <li class="tab index notContact current">
-          <div class="fileName">index.html</div>
-          <div class="close-icon"></div>
-        </li>
-        <li class="tab contact">
-          <div class="fileName">contact.html</div>
-          <div class="close-icon">
-        </li>
-      </ul>
+    <ul class="menu">
+      <li class="tab index notContact current">
+        <div class="fileName">index.html</div>
+        <div class="close-icon"></div>
+      </li>
+      <li class="tab contact">
+        <div class="fileName">contact.html</div>
+        <div class="close-icon">
+      </li>
+    </ul>
       <!-- code -->
-      <article class="code toggleTest notContact">
-        <ol class="lines">
-          <li v-for="code in codes"><pre><code v-html="highlight(code)"></code></pre></li>
-        </ol>
-      </article>
-      <article class="code toggleTest hidden contact">
-        <ol class="lines">
-        </ol>
-      </article>
-      </div>
+    <article class="code toggleTest notContact">
+      <ol class="lines">
+        <li v-for="code in codes"><pre><code v-html="highlight(code)"></code></pre></li>
+      </ol>
+    </article>
+    <article class="code toggleTest hidden contact">
+      <ol class="lines">
+      </ol>
+    </article>
+    </div>
+  </div>
 </template>
 
 <script>
